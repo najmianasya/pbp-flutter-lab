@@ -36,3 +36,34 @@ Keyword `final` dan `const` merupakan keyword yang dapat digunakan untuk membuat
 
 ## References
 * https://belajarflutter.com/perbedaan-final-dan-const-pada-dart-dan-flutter/
+
+# Tugas 8 PBP
+
+## Jelaskan perbedaan Navigator.push dan Navigator.pushReplacement.
+* `Navigator.push`: Menambahkan halaman baru yang akan ditampilkan pada aplikasi di bagian paling atas dari stack
+* `Navigator.pushReplacement`: Menggantikan halaman yang terletak pada top of stack dengan halaman baru yang akan ditampilkan di aplikasi
+
+## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+* Card: widget yang digunakan untuk menampilkan data dari form dalam bentuk Card
+* Drawer: widget yang digunakan untuk melakukan navigasi ke halaman counter_7, Tambah Budget, serta Data Budget
+* DropdownButton: widget yang digunakan untuk meminta input menggunakan dropdown button
+* Form: widget yang digunakan untuk menjadi container bagi input fields
+* SingleChildScrollView: widget yang digunakan untuk membuat box berisi sebuah widget yang dapat di-scroll
+* TextButton: widget yang digunakan untuk menampilkan button yang berisi sebuah text
+* TextFormField: widget yang digunakan untuk meminta input berupa text
+
+## Sebutkan jenis-jenis event yang ada pada Flutter (contoh: onPressed).
+* OnPressed: event yang terjadi ketika user menekan suatu button
+* OnTap: event yang terjadi ketika user menekan suatu widget
+* OnChanged: event yang terjadi ketika terdapat perubahan value pada widget TextField
+* OnSaved: event yang terjadi ketika user menyimpan sebuah form
+
+## Jelaskan bagaimana cara kerja Navigator dalam "mengganti" halaman dari aplikasi Flutter.
+Navigator berperan sebagai route manager yang mengatur pergantian halaman pada aplikasi. Cara kerja navigator mengikuti prinsip stack, yakni Last In First Out (LIFO). Layaknya stack pada umumnya, navigator memiliki method `push()` yang akan menambahkan halaman baru di bagian paling atas dari stack serta method `pop()` yang akan mengeluarkan halaman yang berada di bagian paling stack. Halaman yang berada di bagian paling atas stack (Top Of Stack/TOS) merupakan halaman yang akan ditampilkan pada aplikasi.
+
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+* Membuat widget `Drawer` pada file `drawer.dart` dan routing ke halaman counter_7, Tambah Budget, serta Data Budget
+* Membuat model `Budget` pada file `models.dart`
+* Membuat form pada file `form.dart` untuk mendapatkan judul, nominal, dan jenis budget
+* Membuat button "Simpan" pada file `form.dart` untuk menyimpan input dari form ke dalam sebuah list berisi objek Budget
+* Membuat halaman untuk menampilkan data budget pada file `data_budget.dart`
