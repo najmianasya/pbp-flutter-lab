@@ -73,14 +73,24 @@ Navigator berperan sebagai route manager yang mengatur pergantian halaman pada a
 # Tugas 9 PBP
 
 # Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
-Ya, kita bisa melakukan pengambilan data JSON tanpa membuat model terlebih dahulu. Meski demikian,
+Ya, kita bisa melakukan pengambilan data JSON tanpa membuat model terlebih dahulu. Meski demikian, hal tersebut kurang disarankan karena akan membuat proses pengambilan data JSON menjadi kurang terstruktur. Selain itu, dengan membuat model, data dapat diakses sebagai sebuah class sehingga dapat memudahkan dalam proses pengambilan data.
 
 # Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
-* 
+* Expanded: widget yang digunakan untuk meng-expand child widget agar dapat mengisi space yang tersedia
+* FutureBuilder: widget yang digunakan untuk membuat widget berdasarkan snapshot terbaru dari interaksi dengan Future
+* GestureDetector: widget yang digunakan untuk mendeteksi gestur dan memberikan response yang sesuai dengan event yang dihasilkan dari gestur tersebut
 
 # Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+* Menambahkan dependensi HTTP
+* Membuat model dari data (opsional)
+* Melakukan pengambilan data menggunakan `http.get`
+* Data yang diambil akan dikonversi ke dalam bentuk model
+* Widget berdasarkan snapshot terbaru dari interaksi dengan Future akan dibuat oleh FutureBuilder
 
 # Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 * Membuat model `MyWatchList` pada file `mywatchlist.dart` sesuai model yang dibuat pada Tugas 3 PBP
 * Menambahkan Dependensi HTTP untuk mengambil dan mengolah data dari web service
-* 
+* Membuat function `fetchMyWatchList()` untuk mengambil data JSON pada file `fetch_mywatchlist.dart`
+* Membuat file `watchlist.dart` untuk menampilkan judul film pada watchlist
+* Membuat file `watchlist_details.dart` sebagai halaman detail untuk setiap film yang ada pada watchlist
+* Membuat navigasi dari setiap judul watch list ke halaman detail
