@@ -37,6 +37,7 @@ Keyword `final` dan `const` merupakan keyword yang dapat digunakan untuk membuat
 ## References
 * https://belajarflutter.com/perbedaan-final-dan-const-pada-dart-dan-flutter/
 
+
 # Tugas 8 PBP
 
 ## Jelaskan perbedaan Navigator.push dan Navigator.pushReplacement.
@@ -67,3 +68,19 @@ Navigator berperan sebagai route manager yang mengatur pergantian halaman pada a
 * Membuat form pada file `form.dart` untuk mendapatkan judul, nominal, dan jenis budget
 * Membuat button "Simpan" pada file `form.dart` untuk menyimpan input dari form ke dalam sebuah list berisi objek Budget
 * Membuat halaman untuk menampilkan data budget pada file `data_budget.dart`
+
+
+# Tugas 9 PBP
+
+# Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+Ya, kita bisa melakukan pengambilan data JSON tanpa membuat model terlebih dahulu. Meski demikian,
+
+# Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+* 
+
+# Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+
+# Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+* Membuat model `MyWatchList` pada file `mywatchlist.dart` sesuai model yang dibuat pada Tugas 3 PBP
+* Menambahkan Dependensi HTTP untuk mengambil dan mengolah data dari web service
+* 
